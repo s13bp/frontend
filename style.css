@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+
 }
 
 body {
@@ -14,12 +14,14 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
+  padding-top: 50px;
   background: #000000;
   color: #ffffff !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
 }
 
 #chat_container {
@@ -137,6 +139,9 @@ form img {
 
 .tata {
   color: #fff;
-  font-size: 50px;
+  font-size: 20px;
   letter-spacing: 4px;
+  font-family: 'VT323', monospace;
+  float: left;
+  position: fixed;
 }
