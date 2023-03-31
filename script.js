@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
     loader(messageDiv);
 
     // fetch data from api
-    const response = await fetch('https://serverside-p4lndexde-s13bp.vercel.app', {
+    const response = await fetch('https://aibackend-tau.vercel.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
