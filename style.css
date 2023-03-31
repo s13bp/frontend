@@ -11,7 +11,7 @@ body {
 
   background: rgba(0, 0, 0, 0.666);
 
-  background-size:     cover;                      /* <------ */
+  background-size:     cover;                
   background-repeat:   no-repeat;
   background-position: center center;  
 
@@ -173,7 +173,8 @@ form img {
   
 }
 .tata img {
-  width: 120px;
+  width: 150px;
+
 }
 
 @media only screen and (max-width: 800px) {
