@@ -9,12 +9,12 @@
 
 body {
 
-  background: rgba(0, 0, 0, 0.649);
+  background: rgba(0, 0, 0, 0.666);
 
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;  
-  background-image: url(/assets/xx.gif);
+
 }
 
 #app {
@@ -81,6 +81,8 @@ body {
   z-index: 3;
   padding: 10px;
   line-height: 30px;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
 }
 
 .profile {
@@ -91,6 +93,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.chat:hover {
+  transform: scale(1.05);
 }
 
 .ai .profile {
