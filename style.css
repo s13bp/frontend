@@ -4,22 +4,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+
 }
 
 body {
-  background: #000000;
+
+  background: rgba(0, 0, 0, 0.666);
+
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;  
+
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #000000;
+  background: #00000000;
   color: #ffffff !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Syne', sans-serif;
+  z-index: 6;
 }
 
 #chat_container {
@@ -50,36 +58,55 @@ body {
 }
 
 .ai {
-  background: #0f0f0f;
+  background: #0f0f0f00;
 }
-
+#c {
+  z-index: -5;
+  position: fixed;
+  height: 100vh;
+}
 .chat {
   width: 100%;
-  max-width: 1280px;
+  max-width: 60vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
+  background: rgba(64, 64, 64, 0.23);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  z-index: 3;
+  padding: 10px;
+  line-height: 30px;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
 }
 
 .profile {
-  width: 36px;
-  height: 36px;
-  border-radius: 5px;
-  background: #5436DA;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: #5436da00;
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.chat:hover {
+  transform: scale(1.05);
 }
 
 .ai .profile {
-  background: #10a37f;
+  background: #10a37e00;
 }
 
 .profile img {
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -136,7 +163,11 @@ form img {
 }
 
 .tata {
-  color: #fff;
-  font-size: 50px;
-  letter-spacing: 4px;
+  color: #ababab;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-family: 'UnifrakturMaguntia', cursive;
+  left: 0 !important;
+  position: fixed;
+  z-index: 4;
 }

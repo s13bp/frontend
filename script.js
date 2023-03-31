@@ -1,5 +1,5 @@
-import bot from './assets/bot.svg'
-import user from './assets/user.svg'
+import bot from './assets/robot.png'
+import user from './assets/user.png'
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
     loader(messageDiv);
 
     // fetch data from api
-    const response = await fetch('https://serverside-p4lndexde-s13bp.vercel.app', {
+    const response = await fetch('https://aibackend-tau.vercel.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
