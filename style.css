@@ -62,23 +62,25 @@ body {
 }
 #c {
   z-index: -5;
-position: fixed;
-height: 100vh;
+  position: fixed;
+  height: 100vh;
 }
 .chat {
   width: 100%;
-  max-width: 1280px;
+  max-width: 60vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
   background: rgba(64, 64, 64, 0.23);
-  border-radius: 16px;
+  border-radius: 6px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
   z-index: 3;
+  padding: 10px;
+  line-height: 30px;
 }
 
 .profile {
@@ -154,11 +156,11 @@ form img {
 }
 
 .tata {
-  color: #fff;
+  color: #ababab;
   font-size: 20px;
   letter-spacing: 10px;
   font-family: 'UnifrakturMaguntia', cursive;
-  float: left;
+  left: 0 !important;
   position: fixed;
   z-index: 4;
 }
