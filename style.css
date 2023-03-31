@@ -182,6 +182,7 @@ form img {
   font-size: 15px;
 
 }
+.me {display: none;}
 .profile {
   width: 20px;
 }
@@ -190,3 +191,9 @@ form img {
   width: 60px;
 }
 }
+
+.me {
+  cursor: url(/assets/wired-gloves.png), auto;
+}
+
+
